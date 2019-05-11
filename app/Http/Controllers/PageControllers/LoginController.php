@@ -35,6 +35,9 @@ class LoginController extends Controller
      */
     public function handleProviderCallback()
     {
+        $return_to = session()->has('links') ? session('links') : '/';
+        Session::forget('links');
+
         $user = Socialite::driver('google')->user();
 
         $updated_user = User::updateOrCreate(
@@ -50,7 +53,7 @@ class LoginController extends Controller
 
         Auth::login($updated_user, true);
 
-        return redirect('/');
+        return redirect($return_to);
     }
 
     /*
@@ -71,7 +74,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.

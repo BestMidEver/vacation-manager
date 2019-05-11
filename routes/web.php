@@ -17,7 +17,7 @@ Route::view('/', 'pages.home');
 
 Route::get('/login', [ 'as' => 'login', 'uses' => 'PageControllers\LoginController@redirectToProvider' ])->middleware('guest');
 
-Route::get('/oauth2callback', 'PageControllers\LoginController@handleProviderCallback');
+Route::get('/oauth2callback', 'PageControllers\LoginController@handleProviderCallback')->middleware('guest');
 
 Route::get('/logout', 'PageControllers\LoginController@logout')->middleware('auth');
 
