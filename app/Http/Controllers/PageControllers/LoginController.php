@@ -7,6 +7,7 @@ use App\Jobs\SendNotificationForUsers;
 use App\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 use Socialite;
 
 class LoginController extends Controller
