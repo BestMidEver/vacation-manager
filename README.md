@@ -50,27 +50,27 @@ Basically, you will pull the project to the cloud server and connect the wires.
 First, check that you are in your home directory and clone the laravel project to a directory called vacation-manager:
 
 ```bash
-cd ~
-git clone https://github.com/BestMidEver/vacation-manager vacation-manager
+$ cd ~
+$ git clone https://github.com/BestMidEver/vacation-manager vacation-manager
 ```
 
 Move into the vacation-manager directory:
 
 ```bash
-cd ~/vacation-manager
+$ cd ~/vacation-manager
 ```
 
 Next, use Docker's composer image to mount the directories that you will need for your Laravel project and avoid the overhead of installing Composer globally:
 
 ```bash
-docker run --rm -v $(pwd):/app composer install
+$ docker run --rm -v $(pwd):/app composer install
 
 ```
 
 As a final step, set permissions on the project directory so that it is owned by your non-root user:
 
 ```bash
-sudo chown -R $USER:$USER ~/vacation-manager
+$ sudo chown -R $USER:$USER ~/vacation-manager
 ```
 
 #### Running the Containers and Modifying Environment Settings
@@ -78,13 +78,13 @@ sudo chown -R $USER:$USER ~/vacation-manager
 As a final step, though, you will make a copy of the .env.example file and name the copy .env, which is the file Laravel expects to define its environment:
 
 ```bash
-cp .env.example .env
+$ cp .env.example .env
 ```
 
 Open .env file
 
 ```bash
-docker-compose exec app nano .env
+$ docker-compose exec app nano .env
 ```
 
 * APP_URL = YOURDOMAINNAME
@@ -96,7 +96,7 @@ docker-compose exec app nano .env
 Next, set the application key for the Laravel application
 
 ```bash
-docker-compose exec app php artisan key:generate
+$ docker-compose exec app php artisan key:generate
 ```
 
 #### Database
@@ -104,7 +104,7 @@ docker-compose exec app php artisan key:generate
 Create tables which are predefined.
 
 ```bash
-docker-compose exec app php artisan migrate
+$ docker-compose exec app php artisan migrate
 ```
 
 ##### Congratulations
