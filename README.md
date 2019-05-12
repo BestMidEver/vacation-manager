@@ -8,7 +8,7 @@ This is a simple web application using PHP, Laravel, MySQL and Docker Compose.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on a cloud server with email notification. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on a cloud server with email notification. See below for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
@@ -18,9 +18,7 @@ You need a server with docker compose installed.
 
 I chose [DigitalOcean](https://m.do.co/c/3a4b7d44cada) droplet with docker compose pre-installed, you are free to choose otherwise.
 
-```
 [Simple and clean youtube tutorial](https://www.youtube.com/watch?v=f7hCzwYBIXc)
-```
 
 #### Email Server
 
