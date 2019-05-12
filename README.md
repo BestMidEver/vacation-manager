@@ -18,18 +18,16 @@ You need a server with docker compose installed.
 
 I chose [DigitalOcean](https://m.do.co/c/3a4b7d44cada) droplet with docker compose pre-installed, you are free to choose otherwise.
 
-[Simple and clean youtube tutorial](https://www.youtube.com/watch?v=f7hCzwYBIXc)
+* [Simple and clean youtube tutorial](https://www.youtube.com/watch?v=f7hCzwYBIXc)
 
 #### Email Server
 
 I used gmail smtp server, because it is free and this is a demo project. You are free to choose otherwise.
 
-```
 * Go to your google account
 * Allow access for less secure apps
 * Enable 2-step verification
 * Create an app pasword for the project and save the password to write in .env file later
-```
 
 #### Google OAuth
 
