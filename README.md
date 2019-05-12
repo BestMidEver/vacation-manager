@@ -106,3 +106,7 @@ Create tables which are predefined.
 ```bash
 docker-compose exec app php artisan migrate
 ```
+
+##### Congratulations
+
+Visit YOURDOMAINNAME in the browser.
