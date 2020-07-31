@@ -4,7 +4,7 @@ This is a simple web application using PHP, Laravel, MySQL and Docker Compose.
 
 ## Demo
 
-[vacationmanagement.ml](http://vacationmanagement.ml/)
+[vacationmanagement.ml](http://vacationmanagement.ml/) Link is not working anymore.
 
 ## Getting Started
 
